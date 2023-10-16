@@ -1,0 +1,9 @@
+docker container ls -a
+
+docker start -i nervous_sthern
+
+apt-get update
+
+apt-get -y install nano
+
+nano /usr/src/app/index.js
