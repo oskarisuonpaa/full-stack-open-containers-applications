@@ -1,0 +1,21 @@
+docker exec -it todo-backend-redis-1 bash
+
+redis-cli
+
+KEYS *
+
+GET added_todos
+
+SET added_todos "9001" 
+
+# checked statistics -> "added_todos": 9001
+
+# created new todo with postman
+
+GET added_todos -> "9002"
+
+DEL added_todos
+
+# created new todo with postman
+
+GET added_todos -> "1"
